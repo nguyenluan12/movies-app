@@ -109,9 +109,9 @@ function App() {
         <section className="all-movies mt-10 text-center">
           <h2>All movies</h2>
           {isLoading ? (
-            <p className="text-white">
+            <div className="text-white">
               <Spinner />
-            </p>
+            </div>
           ) : errorMsg ? (
             <p className="text-red-50">{errorMsg}</p>
           ) : (
